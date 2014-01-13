@@ -1,0 +1,112 @@
+#sortable{
+    margin: 100px 100px;;
+}
+ul { list-style-type: none; margin: 0; padding: 0; margin-bottom: 10px; }
+li { margin: 5px; padding: 0px 0px; width: 82px; border-radius: 5px; }
+ul.topmenu li {width: 80px!important; }
+ul.topmenu  { }
+ul.topmenu,ul.topmenu ul{
+        margin:0;
+        list-style:none;
+        padding:0;
+        background-color:#dedede;
+        border:1px solid #5f5f5f;
+        border-radius:5px;
+}
+ul.topmenu ul{
+        display:none;
+        position:absolute;
+        left:100%;
+        top:0;
+        box-shadow:3.5px 3.5px 5px #000000;
+        background-color:#424542;
+        border:2px solid #fff;
+        border-radius:6px;
+        padding:0 10px 10px;
+}
+ul.topmenu li:hover>*{
+        display:block;
+}
+ul.topmenu li{
+        position:relative;
+        display:block;
+        white-space:nowrap;
+        font-size:0;
+        color:#000!important;
+}
+ul.topmenu li:hover{
+        z-index:1;
+}
+ul.topmenu{
+        font-size:0;
+        z-index:999;
+        position:relative;
+        display:block;
+        float:left;
+        padding:0;
+}
+ul.topmenu>li{
+        margin:0;
+}
+ul.topmenu a:active, ul.topmenu a:focus{
+        outline-style:none;
+}
+ul.topmenu a{
+        display:block;
+        vertical-align:middle;
+        text-align:left;
+        text-decoration:none;
+        font:bold 14px Trebuchet MS;
+        color:#000!important;
+        text-shadow:#FFF 0 0 1px;
+        cursor:pointer;
+        padding:10px;
+        background-color:#444444;
+        background: linear-gradient(to bottom, rgba(222,222,222,1) 0%,rgba(170,170,170,1) 47%,rgba(70,70,70,1) 100%);
+        background-repeat:repeat;
+        background-position:0 0;
+        border:1px solid #C0C0C0;
+}
+ul.topmenu ul li{
+        float:none;
+        margin:10px 0 0 20px;
+}
+ul.topmenu ul a{
+        text-align:left;
+        padding:4px;
+        background-color:#424542;
+        background-image:none;
+        border-width:0;
+        border-radius:0px;
+        font:14px Tahoma;
+        color:#FFF!important;
+        text-decoration:none;
+        text-shadow:#FFF 0 0 0;
+}
+ul.topmenu li:hover>a{
+        background:#444444;
+        border-color:#C0C0C0;
+        border-style:solid;
+        color:#FFF!important;
+        text-shadow:#FFF 0 0 1px;
+        background: linear-gradient(to bottom, rgba(222,222,222,1) 0%,rgba(170,170,170,1) 0%,rgba(70,70,70,1) 92%);
+        text-decoration:none;
+}
+ul.topmenu span{
+        display:block;
+        overflow:visible;
+        background-position:right center;
+        background-repeat:no-repeat;
+        padding-right:0px;
+}
+ul.topmenu ul li:hover>a{
+        background-color:#424542;
+        background-image:none;
+        color:#F2B20E!important;
+        text-decoration:none;
+        text-shadow:#FFF 0 0 0;
+}
+
+li.ui-state-default ul.topmenu {margin-top: -40px!important;}
+li.ui-state-default ul.topmenu li.topmenu a{height:18px!important;}
+
